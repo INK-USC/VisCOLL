@@ -8,7 +8,7 @@ File name format: task_buffer_real_split_{1}_split_{2}_novel_comps_{3}_task_part
 3. Whether the data is the novel-composition split of 24 held-out concept pairs
 
 The pickled file is python list where each item is a dict:
-{'annotation': {'image_id': 374041, 'id': 31929, 'caption': 'Someone sitting on an elephant standing by a fence.  '}, 'task': 'cow', 'mask': (3, 5)}
+{'annotation': {'image_id': 374041, 'id': 31929, 'caption': 'Someone sitting on an elephant standing by a fence.  '}, 'task': 'elephant', 'mask': (3, 5)}
 
 The `mask` is the text span that should be masked for prediction.  `image_id` can be used for locating the image in the dataset.
 
