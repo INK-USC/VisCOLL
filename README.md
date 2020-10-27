@@ -28,7 +28,7 @@ For example, to train a VLBERT model with a memory of 10,000 examples on coco us
 python train_mlm.py --name debug --config configs/mlmcaptioning/er.yaml --seed 0 --cfg MLMCAPTION.BASE=vlbert OUTPUT_DIR=runs/
 ```
 
-You may check **[walkthough.ipynb](https://github.com/INK-USC/VisCOLL/blob/master/walkthrough.ipynb)** in this repo for a detailed walkthrough of **training, inference, and evaluation**.
+You may check **[walkthrough.ipynb](https://github.com/INK-USC/VisCOLL/blob/master/walkthrough.ipynb)** in this repo for a detailed walkthrough of **training, inference, and evaluation**.
 
 ## Data
 
