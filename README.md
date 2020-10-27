@@ -1,5 +1,7 @@
 # VisCOLL
-Code and data for the paper "Visually grounded continual learning of compositional phrases, EMNLP 2020".
+Code and data for the paper "Visually grounded continual learning of compositional phrases, EMNLP 2020". [Paper](https://arxiv.org/abs/2005.00785)
+
+Checkout out [Project website](https://inklab.usc.edu/viscoll-project/) for **data explorers** and the **leaderboard**!
 
 ## Installation
 
@@ -8,6 +10,13 @@ conda create -n viscoll-env python==3.7.5
 conda activate viscoll-env
 pip install -r requirements.txt
 ```
+
+## Overview
+
+VisCOLL proposes a problem setup and studies algorithms for continual learning and compositionality over visual-linguistic data. In VisCOLL, the model visits a stream of examples with an evolving data distribution over time and learn to perform masked phrases prediction. We create COCO-shift and Flickr-shift (based on COCO-captions and Flickr30k-entities) for study. 
+
+<img src="https://inklab.usc.edu/viscoll-project/assets/img/overview2.png">
+
 
 ## Training and evaluation
 
@@ -73,3 +82,13 @@ features. This file will also be uploaded soon.
 
 ## Visualizing the stream
 We provide `visual_stream.ipynb` to visualize task distributions over time in Flickr-shift dataset.
+
+## Citation
+```
+@inproceedings{Jin2020VisuallyGC,
+    title={Visually Grounded Continual Learning of Compositional Phrases},
+    author={Xisen Jin and Junyi Du and Arka Sadhu and R. Nevatia and X. Ren},
+    booktitle={EMNLP},
+    year={2020}
+}
+```
