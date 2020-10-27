@@ -28,7 +28,7 @@ For example, to train a VLBERT model with a memory of 10,000 examples on coco us
 python train_mlm.py --name debug --config configs/mlmcaptioning/er.yaml --seed 0 --cfg MLMCAPTION.BASE=vlbert OUTPUT_DIR=runs/
 ```
 
-You may check `walkthough.ipynb` for a detailed walkthrough of training, inference, and evaluation.
+You may check **[walkthough.ipynb](https://github.com/INK-USC/VisCOLL/blob/master/walkthrough.ipynb)** in this repo for a detailed walkthrough of **training, inference, and evaluation**.
 
 ## Data
 
@@ -36,7 +36,7 @@ We release the constructed data streams and scripts for visualization in the `da
 
 ## COCO shift
 
-File name format: task_buffer_real_split_{1}_split_{2}_novel_comps_{3}_task_partition_any_objects.pkl
+COCO-shift is under `datasets/coco/coco_buffer`, with the name formats: task_buffer_real_split_{1}_split_{2}_novel_comps_{3}_task_partition_any_objects.pkl
 
 1. The official data split where examples are drawn from
 2. How the dataset is applied during training. We separate out 5,000 examples from original train split as the validation examples. The official val split is used as the test split
@@ -65,23 +65,23 @@ We use data from [this repo](https://github.com/mitjanikolaus/compositional-imag
 under `datasets/novel_comps` and `compositional-image-captioning/data/occurrences/` under `datasets/occurrences`.
 
 ## Flickr shift
-We use official split for Flickr30k Entities.
+Flickr-shift is under `datasets/flickr/flickr_buffer`.
+We use official split for Flickr30k Entities. Below is an example from the Flickr shift dataset.
 ```
 {'tokens': ['a', 'motorcyclist', '"', 'pops', 'a', 'wheelie', '"', 'in', 'a', 'grassy', 'field', 'framed', 'by', 'rolling', 'hills', '.'], 'task_id': 518, 'image_id': '3353962769', 'instance_id': 8714, 'phrase_offset': (0, 2)}
 ```
-The `phrase offset` is the text span that should be masked for prediction. `image_id` can be used for locating the image in the dataset.
+The `phrase offset` is the text span that should be masked for prediction. `image_id` can be used for retrieving the image in the dataset.
 
 ### Image features for Flickr
 
-Similar to COCO, unless you want to create the datastream yourself, the only files required now are,
+Similar to COCO, unless you want to create the datastream yourself, the only files required are,
 
-1. Extracted image features for Flickr under `datasets/flickr-features`. Simiarly, we use code from [this repo](https://github.com/airsplay/py-bottom-up-attention.git) to extract
-features. This file will also be uploaded soon.
+1. Extracted image features for Flickr under `datasets/flickr-features`. Simiarly, we use code from [this repo](https://github.com/airsplay/py-bottom-up-attention.git) to perfrom extraction. The extracted features will be uploaded soon.
 
 2. A json dictionary mapping of image id to image features in the file above. Included in this repo.
 
 ## Visualizing the stream
-We provide `visual_stream.ipynb` to visualize task distributions over time in Flickr-shift dataset.
+We provide `visual_stream.ipynb` to visualize task distributions over time in Flickr-shift dataset. 
 
 ## Citation
 ```
