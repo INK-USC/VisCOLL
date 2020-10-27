@@ -1,0 +1,29 @@
+MLMCAPTION:
+    ACTIVATED: True
+    BASE: "vlbert"
+    DATASET: "f"
+EXTERNAL:
+    SPATIAL_FEAT_SHAPE: (2048,7,7)
+    BBOX_FEAT_SHAPE: (100,2048)
+    BBOX_SHAPE: (100,4)
+
+    EPOCH_NUM: 1
+
+    NUM_WORKERS: 0
+    PIN_MEMORY: True
+    SHUFFLE: False
+    BATCH_SIZE: 32
+
+    OCL:
+        ACTIVATED: True
+        CONTINUOUS: True
+        ALGO: "ER"
+    REPLAY:
+        MEM_BS: 32
+        MEM_LIMIT: 10000
+    MLM:
+        CONFIG_PATH: "configs/mlmcaptioning"
+        TOKENIZER: "bert-base-uncased"
+        MAX_TXT_SEQ_LEN: 64
+SOLVER:
+  BASE_LR: 0.0001

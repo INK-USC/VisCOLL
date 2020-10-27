@@ -1,0 +1,21 @@
+# config file
+MLMCAPTION:
+    ACTIVATED: True
+EXTERNAL:
+    EPOCH_NUM: 10 # # 1 for iid-online; 10 for iid-offline
+
+    NUM_WORKERS: 0
+    PIN_MEMORY: True
+    BATCH_SIZE: 32
+
+    OCL:
+        ACTIVATED: False
+        CONTINUOUS: False
+        ALGO: "naive"
+
+    MLM:
+        CONFIG_PATH: "configs/mlmcaptioning"
+        TOKENIZER: "bert-base-uncased"
+        MAX_TXT_SEQ_LEN: 64
+SOLVER:
+  BASE_LR: 0.0001
