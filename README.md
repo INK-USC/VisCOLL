@@ -1,7 +1,7 @@
 # VisCOLL
 Code and data for the paper "Visually grounded continual learning of compositional phrases, EMNLP 2020". [Paper](https://arxiv.org/abs/2005.00785)
 
-Checkout out [Project website](https://inklab.usc.edu/viscoll-project/) for **data explorers** and the **leaderboard**!
+Checkout our [Project website](https://inklab.usc.edu/viscoll-project/) for **data explorers** and the **leaderboard**!
 
 ## Installation
 
