@@ -1,5 +1,5 @@
 Cython == 0.29.14
-Pillow == 6.2.1
+Pillow
 PyYAML == 5.2
 boto3 == 1.11.9
 botocore == 1.14.9
