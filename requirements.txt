@@ -1,6 +1,6 @@
 Cython == 0.29.14
 Pillow
-PyYAML == 5.2
+PyYAML == 5.4
 boto3 == 1.11.9
 botocore == 1.14.9
 easydict == 1.9
