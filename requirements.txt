@@ -5,7 +5,7 @@ boto3 == 1.11.9
 botocore == 1.14.9
 easydict == 1.9
 h5py == 2.10.0
-ipython == 7.10.2
+ipython == 7.16.3
 jsonlines == 1.2.0
 matplotlib == 3.1.2
 nltk == 3.4.5
